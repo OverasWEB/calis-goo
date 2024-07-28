@@ -1,0 +1,240 @@
+/* Styling untuk elemen body */
+body {
+    font-family: Arial, sans-serif;
+    /* Mengatur jenis font */
+    background-color: #f4f4f4;
+    /* Warna latar belakang halaman */
+    display: flex;
+    /* Menggunakan Flexbox untuk tata letak */
+    justify-content: center;
+    /* Memusatkan konten secara horizontal */
+    align-items: center;
+    /* Memusatkan konten secara vertikal */
+    height: 100vh;
+    /* Tinggi penuh viewport */
+    margin: 0;
+    /* Menghilangkan margin default */
+}
+
+/* Styling untuk container utama */
+.container {
+    background: teal;
+    /* Warna latar belakang putih */
+    padding: 20px;
+    /* Ruang di dalam container */
+    border-radius: 8px;
+    /* Sudut membulat */
+    box-shadow: 0 10 10px rgba(0, 0, 0, -5);
+    /* Bayangan kotak */
+    width: 70%;
+    max-width: 450px;
+    /* Lebar container */
+    overflow: auto;
+    /* menyesuaikan tinggi tabel baru */
+}
+
+/* Styling untuk elemen heading */
+h1,
+h2 {
+    color: whitesmoke;
+    /* Warna teks heading */
+}
+
+/* Styling untuk form */
+form {
+    display: flex;
+    /* Menggunakan Flexbox untuk form */
+    flex-direction: column;
+    /* Mengatur elemen form secara vertikal */
+}
+
+/* Styling untuk grup form */
+.form-group {
+    margin-bottom: 15px;
+    /* Ruang bawah setiap grup form */
+}
+
+/* Styling untuk label */
+label {
+    display: block;
+    /* Menampilkan label sebagai blok */
+    margin-bottom: 0;
+    /* Ruang bawah label */
+    color: whitesmoke;
+    /* warna teks */
+}
+
+/* Styling untuk input field */
+input {
+    width: 100%;
+    /* Lebar penuh kontainer */
+    padding: 10px;
+    /* Ruang dalam input */
+    border: 1px solid #fa9191;
+    /* Border abu-abu terang */
+    border-radius: 4px;
+    /* Sudut membulat */
+}
+
+/* Styling untuk tombol submit*/
+button {
+    padding: 8px;
+    /* Ruang dalam tombol */
+    border: none;
+    /* Menghilangkan border default */
+    border-radius: 4px;
+    /* Sudut membulat tombol */
+    background: turquoise;
+    /* Warna latar belakang hijau */
+    color: black;
+    /* Warna teks putih */
+    cursor: pointer;
+    /* Menampilkan kursor pointer saat hover */
+    transition: all 0.2s ease;
+
+}
+
+/* saat di klik */
+.button:active {
+    transform: scale(1.4);
+    background-color: paleturquoise;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+/* Styling untuk tombol saat hover */
+button:hover {
+    transform: scale(1.03);
+    background-color: paleturquoise;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: white;
+
+}
+
+/* Styling untuk hasil (tabel) */
+.results {
+    margin-top: 20px;
+    /* Ruang atas hasil */
+    overflow-x: auto;
+    /* Menambahkan scroll horizontal jika diperlukan */
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    /* Lebar penuh kontainer */
+    border-collapse: collapse;
+    /* Menghilangkan ruang antar border */
+    font-size: 14px;
+    /* Ukuran font tabel yang lebih kecil */
+    background-color: whitesmoke;
+}
+
+/* Styling untuk header tabel */
+thead {
+    background-color: #f8f9fa;
+    /* Warna latar belakang header tabel */
+}
+
+/* Styling untuk sel tabel (header dan data) */
+th,
+td {
+    padding: 10px;
+    /* Ruang dalam sel tabel */
+    border: 1px solid gray;
+    /* Border abu-abu terang */
+    text-align: left;
+    /* Penjajaran teks ke kiri */
+}
+
+/* Styling untuk sel header tabel */
+th {
+    background-color: turquoise;
+    /* Warna latar belakang sel header tabel */
+}
+
+/* Styling untuk tombol hapus */
+.delete-button {
+    display: flex;
+    background: #dc3545;
+    /* Warna latar belakang merah untuk tombol hapus */
+    color: #fff;
+    /* Warna teks putih */
+    border: none;
+    /* Menghilangkan border default */
+    padding: 5px 10px;
+    /* Ruang dalam tombol hapus */
+    border-radius: 15px;
+    /* Sudut membulat tombol hapus */
+    cursor: pointer;
+    /* Menampilkan kursor pointer saat hover */
+}
+
+/* Styling untuk tombol hapus saat hover */
+.delete-button:hover {
+    transform: scale(1.5);
+    background: black;
+    /* Warna latar belakang merah lebih gelap saat hover */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling untuk grup form */
+.form-group {
+    display: flex;
+    /* Menggunakan Flexbox untuk grup form */
+    flex-direction: column;
+    /* Menyusun elemen form secara vertikal */
+    margin-bottom: 8px
+        /* Ruang bawah setiap grup form */
+}
+
+/* Styling untuk input field dalam grup form */
+.form-group input {
+    width: 100%;
+    /* Lebar input menyesuaikan dengan lebar form group */
+    padding: 1vh;
+    /* Ruang dalam input */
+    border: 1px solid #ddd;
+    /* Border abu-abu terang */
+    border-radius: 4px;
+    /* Sudut membulat */
+}
+
+/* Styling untuk dropdown (select) */
+.short-input {
+    width: 100%;
+    /* Lebar dropdown menyesuaikan dengan lebar form group */
+    /* Lebar maksimum dropdown */
+    padding: 5px;
+    /* Ruang dalam dropdown */
+    border-radius: 4px;
+    /* Sudut membulat */
+    box-sizing: border-box;
+    /* Menghindari padding menambah lebar total */
+}
+
+
+/* Media query untuk perangkat seluler */
+@media (max-width: 500px) {
+    .container {
+        width: 80%;
+        height: 80%;
+        font-size: 70%;
+    }
+
+    .results {
+        margin-top: 0;
+        /* Mengurangi ruang atas pada perangkat kecil */
+    }
+
+    table {
+        font-size: 90%;
+        /* Mengurangi ukuran font tabel lebih kecil pada perangkat kecil */
+    }
+
+    th,
+    td {
+        padding: 3px;
+        /* Mengurangi padding sel tabel untuk perangkat kecil */
+    }
+}
