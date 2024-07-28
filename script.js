@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${push}</td>
                 <td>${full} min</td>
                 <td>${add}</td>
-                <td><button class="delete-button">Hapus</button></td> <!-- Tombol hapus -->
+                <td><button class="delete-button">Delete</button></td> <!-- Tombol hapus -->
             `;
             // Menambahkan baris ke tabel
             attendanceList.appendChild(row);
