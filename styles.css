@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     /* Mengatur jenis font */
-    background-color: #f4f4f4;
+    background: paleturquoise;
     /* Warna latar belakang halaman */
     display: flex;
     /* Menggunakan Flexbox untuk tata letak */
@@ -38,6 +38,8 @@ h1,
 h2 {
     color: whitesmoke;
     /* Warna teks heading */
+    user-select: none;
+    /* tidak bisa disalin */
 }
 
 /* Styling untuk form */
@@ -91,11 +93,12 @@ button {
     cursor: pointer;
     /* Menampilkan kursor pointer saat hover */
     transition: all 0.2s ease;
-
+    user-select: none;
+    /* tidak bisa disalin */
 }
 
 /* Styling untuk tombol saat hover */
-button:hover {
+button:active {
     transform: scale(1.03);
     background-color: paleturquoise;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -148,7 +151,7 @@ th {
 .delete-button {
     background: #dc3545;
     /* Warna latar belakang merah untuk tombol hapus */
-    color: #fff;
+    color: whitesmoke;
     /* Warna teks putih */
     border: none;
     /* Menghilangkan border default */
@@ -158,10 +161,12 @@ th {
     /* Sudut membulat tombol hapus */
     cursor: pointer;
     /* Menampilkan kursor pointer saat hover */
+    user-select: none;
+    /* tidak bisa disalin */
 }
 
 /* Styling untuk tombol hapus saat hover */
-.delete-button:hover {
+.delete-button:active {
     transform: scale(1.07);
     background: black;
     /* Warna latar belakang merah lebih gelap saat hover */

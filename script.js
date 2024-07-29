@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Menangani event klik pada tombol hapus
     attendanceList.addEventListener('click', (event) => {
         if (event.target.classList.contains('delete-button')) {
-            if (window.confirm('Yakin ingin menghapus?')) {
-                if (window.confirm('Apakah anda sudah benar-benar yakin?')) {
+            if (window.confirm('Are you sure to delete this table?')) {
+                if (window.confirm('Are you really sure?')) {
                     const row = event.target.closest('tr');
                     row.remove(); // Menghapus baris yang diklik
                     saveData(); // Menyimpan data ke localStorage setelah penghapusan
