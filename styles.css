@@ -10,10 +10,12 @@ body {
     /* Memusatkan konten secara horizontal */
     align-items: center;
     /* Memusatkan konten secara vertikal */
-    height: 100vh;
+    /* height: 100vh; */
     /* Tinggi penuh viewport */
     margin: 0;
     /* Menghilangkan margin default */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Styling untuk container utama */
@@ -24,13 +26,11 @@ body {
     /* Ruang di dalam container */
     border-radius: 8px;
     /* Sudut membulat */
-    box-shadow: 0 10 10px rgba(0, 0, 0, -5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     /* Bayangan kotak */
     width: 70%;
     max-width: 450px;
     /* Lebar container */
-    overflow: auto;
-    /* menyesuaikan tinggi tabel baru */
 }
 
 /* Styling untuk elemen heading */
@@ -94,14 +94,6 @@ button {
 
 }
 
-/* saat di klik */
-.button:active {
-    transform: scale(1.4);
-    background-color: paleturquoise;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    color: white;
-}
-
 /* Styling untuk tombol saat hover */
 button:hover {
     transform: scale(1.03);
@@ -115,7 +107,6 @@ button:hover {
 .results {
     margin-top: 20px;
     /* Ruang atas hasil */
-    overflow-x: auto;
     /* Menambahkan scroll horizontal jika diperlukan */
 }
 
@@ -155,7 +146,6 @@ th {
 
 /* Styling untuk tombol hapus */
 .delete-button {
-    display: flex;
     background: #dc3545;
     /* Warna latar belakang merah untuk tombol hapus */
     color: #fff;
@@ -172,10 +162,10 @@ th {
 
 /* Styling untuk tombol hapus saat hover */
 .delete-button:hover {
-    transform: scale(1.5);
+    transform: scale(1.07);
     background: black;
     /* Warna latar belakang merah lebih gelap saat hover */
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Styling untuk grup form */
@@ -228,13 +218,23 @@ th {
     }
 
     table {
+        width: 1% 50% 40%;
         font-size: 90%;
         /* Mengurangi ukuran font tabel lebih kecil pada perangkat kecil */
     }
 
+    th {
+        color: black;
+    }
+
     th,
     td {
-        padding: 3px;
-        /* Mengurangi padding sel tabel untuk perangkat kecil */
+        text-align: center;
+        align-items: center;
+        padding: 2px;
+    }
+
+    .delete-button {
+        font-size: 95%;
     }
 }
