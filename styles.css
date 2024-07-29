@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     /* Mengatur jenis font */
-    background: paleturquoise;
+    background-color: paleturquoise;
     /* Warna latar belakang halaman */
     display: flex;
     /* Menggunakan Flexbox untuk tata letak */
