@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <!-- Menghubungkan file CSS untuk styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container" translate="no">
         <h1>Calistehnic</h1>
-        
+
         <!-- Formulir untuk memasukkan data absensi -->
         <form id="attendanceForm">
             <div class="form-group">
@@ -24,14 +26,14 @@
                     <!-- Tambahkan lebih banyak opsi sesuai kebutuhan -->
                 </select>
             </div>
-            
-            
+
+
             <div class="form-group">
                 <label for="attendanceDate">Date</label>
                 <!-- Input untuk memilih tanggal -->
                 <input type="date" id="attendanceDate" name="attendanceDate" class="short-input" required>
             </div>
-            
+
             <div class="form-group">
                 <input type="number" id="push" name="push" class="short-input" placeholder="Chest...">
             </div>
@@ -65,9 +67,13 @@
                 <tbody id="attendanceList"></tbody>
             </table>
         </div>
+        <div style="text-align: right; margin-top: 10px;">
+            <span style="color: whitesmoke; opacity: 0.6; font-size: 10px;">Naute Overas</span>
+        </div>
     </div>
 
     <!-- Menghubungkan file JavaScript untuk mengelola interaksi form -->
     <script src="script.js"></script>
 </body>
+
 </html>
