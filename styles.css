@@ -99,7 +99,7 @@ button {
 
 /* Styling untuk tombol saat hover */
 button:active {
-    transform: scale(1.03);
+    transform: scale(1.1);
     background-color: paleturquoise;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     color: white;
