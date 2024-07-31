@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     /* Mengatur jenis font */
-    background-color: rgb(0, 141, 141);
+    background: linear-gradient(-185deg, #00bcbc, #00e2e2, #00ffff);
     /* Warna latar belakang halaman */
     display: flex;
     /* Menggunakan Flexbox untuk tata letak */
@@ -15,12 +15,12 @@ body {
     margin: 0;
     /* Menghilangkan margin default */
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 /* Styling untuk container utama */
 .container {
-    background: teal;
+    background: linear-gradient(15deg,teal, #00a7a7, #00dcdc);
     /* Warna latar belakang putih */
     padding: 20px;
     /* Ruang di dalam container */
@@ -52,11 +52,40 @@ form {
 
 /* Styling untuk grup form */
 .form-group {
-    margin-bottom: 15px;
-    /* Ruang bawah setiap grup form */
+    display: flex;
+    /* Menggunakan Flexbox untuk grup form */
+    flex-direction: column;
+    /* Menyusun elemen form secara vertikal */
+    margin-bottom: 8px
+        /* Ruang bawah setiap grup form */
 }
 
-/* Styling untuk label */
+/* Styling untuk input field dalam grup form */
+.form-group input {
+    width: 100%;
+    /* Lebar input menyesuaikan dengan lebar form group */
+    padding: 1vh;
+    /* Ruang dalam input */
+    border: none;
+    /* Border abu-abu terang */
+    border-radius: 4px;
+    /* Sudut membulat */
+}
+
+/* Styling untuk Memilih hari (select) */
+.short-input {
+    width: 100%;
+    /* Lebar dropdown menyesuaikan dengan lebar form group */
+    padding: 5px;
+    border: none;
+    /* Ruang dalam dropdown */
+    border-radius: 4px;
+    /* Sudut membulat */
+    box-sizing: border-box;
+    /* Menghindari padding menambah lebar total */
+}
+
+/* Styling untuk judul */
 label {
     display: block;
     /* Menampilkan label sebagai blok */
@@ -66,17 +95,7 @@ label {
     /* warna teks */
 }
 
-/* Styling untuk input field */
-input {
-    width: 100%;
-    /* Lebar penuh kontainer */
-    padding: 10px;
-    /* Ruang dalam input */
-    border: 1px solid #fa9191;
-    /* Border abu-abu terang */
-    border-radius: 4px;
-    /* Sudut membulat */
-}
+
 
 /* Styling untuk tombol submit*/
 button {
@@ -92,15 +111,13 @@ button {
     /* Warna teks putih */
     cursor: pointer;
     /* Menampilkan kursor pointer saat hover */
-    transition: all 0.1s ease;
     user-select: none;
     /* tidak bisa disalin */
 }
 
 /* Styling untuk tombol saat hover */
 button:active {
-    transform: scale(1.1);
-    transition: transform 0.1s ease-in;
+    transform: scale(1.05);
     background-color: paleturquoise;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     color: white;
@@ -123,6 +140,7 @@ table {
     font-size: 14px;
     /* Ukuran font tabel yang lebih kecil */
     background-color: whitesmoke;
+    user-select: none;
 }
 
 table tbody tr:nth-child(even) {
@@ -152,6 +170,12 @@ th {
     /* Warna latar belakang sel header tabel */
 }
 
+/* tabel klik */
+#attendanceTable tbody tr:active {
+    background: linear-gradient(90deg, #808080, #b2b2b2);
+    color: white;
+}
+
 /* Styling untuk tombol hapus */
 .delete-button {
     background: #dc3545;
@@ -173,47 +197,12 @@ th {
 /* Styling untuk tombol hapus saat hover */
 .delete-button:active {
     transform: scale(1.3);
-    transition: transform 0.08s ease;
     background: black;
     color: thistle;
     /* Warna latar belakang merah lebih gelap saat hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Styling untuk grup form */
-.form-group {
-    display: flex;
-    /* Menggunakan Flexbox untuk grup form */
-    flex-direction: column;
-    /* Menyusun elemen form secara vertikal */
-    margin-bottom: 8px
-        /* Ruang bawah setiap grup form */
-}
-
-/* Styling untuk input field dalam grup form */
-.form-group input {
-    width: 100%;
-    /* Lebar input menyesuaikan dengan lebar form group */
-    padding: 1vh;
-    /* Ruang dalam input */
-    border: 1px solid #ddd;
-    /* Border abu-abu terang */
-    border-radius: 4px;
-    /* Sudut membulat */
-}
-
-/* Styling untuk dropdown (select) */
-.short-input {
-    width: 100%;
-    /* Lebar dropdown menyesuaikan dengan lebar form group */
-    /* Lebar maksimum dropdown */
-    padding: 5px;
-    /* Ruang dalam dropdown */
-    border-radius: 4px;
-    /* Sudut membulat */
-    box-sizing: border-box;
-    /* Menghindari padding menambah lebar total */
-}
 
 
 /* Media query untuk perangkat seluler */
