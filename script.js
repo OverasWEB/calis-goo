@@ -65,15 +65,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Menangani event klik pada tombol hapus
     attendanceList.addEventListener('click', (event) => {
         if (event.target.classList.contains('delete-button')) {
-            if (window.confirm('Are you sure to delete this table?')) {
-                if (window.confirm('Are you really sure?')) {
-                    const row = event.target.closest('tr');
-                    row.remove(); // Menghapus baris yang diklik
-                    saveData(); // Menyimpan data ke localStorage setelah penghapusan
+            setTimeout(() => {
+                if (window.confirm('Are you sure to delete this table?')) {
+                    if (window.confirm('Are you really sure?')) {
+                        const row = event.target.closest('tr');
+                        row.remove(); // Menghapus baris yang diklik
+                        saveData(); // Menyimpan data ke localStorage setelah penghapusan
+                    }
                 }
-            }
+            }, 10); // 10 milidetik (0.3 detik) penundaan sebelum alert pertama muncul
         }
     });
+    
 
     // Memuat data dari localStorage saat halaman dimuat
     loadData();

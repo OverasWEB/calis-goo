@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     /* Mengatur jenis font */
-    background: linear-gradient(-185deg, #00bcbc, #00e2e2, #00ffff);
+    background: linear-gradient(185deg, #008a8a, #00adad, #00d9d9);
     /* Warna latar belakang halaman */
     display: flex;
     /* Menggunakan Flexbox untuk tata letak */
@@ -14,13 +14,13 @@ body {
     /* Tinggi penuh viewport */
     margin: 0;
     /* Menghilangkan margin default */
-    margin-top: 20px;
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 120px;
 }
 
 /* Styling untuk container utama */
 .container {
-    background: linear-gradient(15deg,teal, #00a7a7, #00dcdc);
+    background: linear-gradient(15deg, #00c1c1, #00c0c0, #00dcdc);
     /* Warna latar belakang putih */
     padding: 20px;
     /* Ruang di dalam container */
@@ -238,4 +238,21 @@ th {
     .delete-button {
         font-size: 95%;
     }
+}
+
+/* coming-soon */
+.coming-soon {
+    width: 100%;
+    height: 50px;
+    background-color: darkturquoise;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 8px 8px;
+    /* text */
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
