@@ -15,7 +15,7 @@ body {
     margin: 0;
     /* Menghilangkan margin default */
     margin-top: 35px;
-    margin-bottom: 300px;
+    margin-bottom: 400px;
 }
 
 /* Styling untuk container utama */
@@ -32,6 +32,19 @@ body {
     max-width: 450px;
     /* Lebar container */
 }
+
+
+/* logo */
+header {
+    display: flex;
+    align-items: center; /* Posisikan secara vertikal di tengah */
+}
+
+header img {
+    width: 4vh;
+    margin-right: 10px; /* Jarak antara logo dan teks */
+}
+
 
 /* Styling untuk elemen heading */
 h1,
@@ -274,5 +287,5 @@ p {
 }
 
 .about :hover {
-    color: orangered;
+    color: #333333;
 }
